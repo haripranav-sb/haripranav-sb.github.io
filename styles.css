@@ -1,5 +1,5 @@
 body {
-    background: seagreen;
+    background: rgb(28, 113, 65);
     font-family: "Times New Roman", Times, sans-serif;
     margin: 40px;
 }
@@ -8,5 +8,14 @@ h1 {
     text-align: center;
 }
 .about {
-    background: #0f6214;
+    background: #81e187;
+}
+.skills {
+    background: #81e187;
+}
+.projects {
+    background: #81e187;
+}
+.contact {
+    background: #81e187;
 }
