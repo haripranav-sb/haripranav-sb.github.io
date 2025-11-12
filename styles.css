@@ -13,98 +13,27 @@ h1 {
     margin-bottom: 1rem;
 }
 
-/* Section backgrounds */
-.about,
-.skills,
-.projects,
-.contact {
-    background: #81e187;
-    padding: 1rem;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-}
-
-/* Projects container */
+/* container for all projects */
 .projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;              /* spacing between project cards */
-    align-items: flex-start;
+  display: flex;
+  gap: 20px;              /* space between projects */
 }
 
-/* Make the section heading span full width inside the projects flex container */
-.projects > h2 {
-    width: 100%;
-    margin: 0 0 0.5rem 0;
-}
-
-/* Individual project cards */
+/* individual project boxes */
 .project {
-    /* flexible: 3 columns on wide screens, but will shrink if needed */
-    flex: 1 1 calc(33.333% - 20px);
-    box-sizing: border-box;
-    background: white;
-    padding: 16px;
-    border-radius: 12px;    /* nicer, consistent rounding */
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    display: flex;
-    flex-direction: column;
-    min-width: 240px;       /* prevents cards from becoming too narrow */
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  width: 30%;             /* three boxes fit in one row */
 }
 
-/* Headings and links inside the card */
-.project h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.1rem;
-    text-align: center;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(25, 154, 25);
-}
-
-/* Image: responsive and cropped-preserve using object-fit */
+/* project images */
 .project img {
-    width: 100%;
-    height: 200px;          /* consistent visual height */
-    object-fit: cover;      /* preserve aspect & fill area */
-    border: 2px solid rgb(28, 113, 65);
-    border-radius: 8px;
-    display: block;
-    margin: 0 0 12px 0;
-}
-
-/* Paragraph inside project card */
-.project p {
-    text-align: left;
-    margin: 0;
-    margin-top: 8px;
-    flex: 1 1 auto;         /* allow description to grow */
-}
-
-/* Small screens / responsive breakpoints */
-@media (max-width: 900px) {
-    .project {
-        flex: 1 1 calc(50% - 20px); /* 2 columns */
-    }
-    .project img {
-        height: 180px;
-    }
-}
-
-@media (max-width: 520px) {
-    body {
-        margin: 16px;
-    }
-    .project {
-        flex: 1 1 100%;            /* 1 column */
-        min-width:unset;
-    }
-    .project img {
-        height: auto;              /* let image scale naturally on very small screens */
-        object-fit: contain;
-    }
+  width: 100%;            /* image fills the box width */
+  height: auto;           /* keeps correct shape */
+  border: 2px solid rgb(28, 113, 65);
+  border-radius: 5px;
 }
 
 /* Made with the help of Chat GPT */
