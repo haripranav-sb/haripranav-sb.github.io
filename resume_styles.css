@@ -1,0 +1,127 @@
+:root {
+  --accent: #0b5cff;
+  --muted: #666;
+  --bg: #f7f9fc;
+  --card: #ffffff;
+  --radius: 12px;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  color: #111;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 900px;
+  margin: 36px auto;
+  padding: 28px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 30px rgba(20, 30, 60, 0.06);
+  overflow: hidden;
+  display: flex;
+  gap: 28px;
+  padding: 28px;
+}
+
+/* two-column layout */
+.left {
+  width: 260px;
+  flex-shrink: 0;
+  border-right: 1px solid #eef2f6;
+  padding-right: 20px;
+}
+
+.right {
+  flex: 1;
+  padding-left: 4px;
+}
+
+header h1 {
+  margin: 0 0 6px 0;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+}
+
+header p.contact {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+h2 {
+  font-size: 14px;
+  margin: 16px 0 8px 0;
+  color: var(--accent);
+  letter-spacing: 0.4px;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Experience / Education blocks */
+.item {
+  margin-bottom: 14px;
+}
+
+.item .title {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.meta {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+ul.bullets {
+  margin: 6px 0 0 18px;
+  padding: 0;
+}
+
+ul.bullets li {
+  margin: 8px 0;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+/* Skills list */
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+
+.skill-list li {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+/* small screens */
+@media (max-width: 720px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    border-right: 0;
+    border-bottom: 1px solid #eef2f6;
+    padding-bottom: 16px;
+  }
+
+  .right {
+    padding-top: 16px;
+  }
+}
