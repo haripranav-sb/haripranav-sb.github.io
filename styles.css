@@ -13,6 +13,16 @@ h1 {
     margin-bottom: 1rem;
 }
 
+.about,
+.skills,
+.projects,
+.contact {
+    background: #81e187;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
 /* container for all projects */
 .projects {
   display: flex;
